@@ -1,0 +1,54 @@
+.continer-1{
+    display: grid;
+    grid-template-columns: 3 , minmax(100px,1fr);
+    grid-template-rows: 2 , minmax(100px , 1fr);
+    grid-template-areas: 
+    'a1 a2 a3'
+    'a4 a4 a4';
+    border: solid 2px black;
+    color: white;
+}
+.bx1,.bx2,.bx3{
+    padding: 25px;
+}
+.bx1{
+    
+grid-area: a1;
+text-align: center;
+}
+.bx2{
+grid-area: a2;
+}
+.bx3{
+grid-area: a3;
+}
+
+.uper{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.bx4{
+    
+    text-align: center;
+    background-color: black;
+    color: white;
+    grid-area: a4;
+}
+.end{
+    font-size: 20px;
+}
+
+.flist{
+    font-size: larger;
+    font-weight: lighter;
+    line-height: 25px;
+    transition: 1s;
+
+}
+.flist:hover{
+    transition: 1s;
+    text-decoration: underline;
+    color: cornflowerblue;
+}
